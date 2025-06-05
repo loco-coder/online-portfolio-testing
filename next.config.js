@@ -11,8 +11,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NODE_ENV === "production" ? "/jonathan-rodriguez-portfolio" : "",
-  assetPrefix: process.env.NODE_ENV === "production" ? "/jonathan-rodriguez-portfolio/" : "",
+  basePath: process.env.NODE_ENV === "production" ? "/online-portfolio-testing" : "",
+  assetPrefix: process.env.NODE_ENV === "production" ? "/online-portfolio-testing/" : "",
 }
 
 module.exports = nextConfig
