@@ -13,7 +13,7 @@ An interactive 3D portfolio website featuring floating bubble animations and imm
 
 ## 🛠️ Technologies
 
-- **Next.js 14** - React framework with App Router
+ - **Next.js 15** - React framework with App Router
 - **Three.js** - 3D graphics and animations
 - **React Three Fiber** - React renderer for Three.js
 - **TypeScript** - Type-safe development
@@ -35,6 +35,23 @@ pnpm run dev
 \`\`\`
 
 Visit [http://localhost:3000](http://localhost:3000) to see the portfolio.
+
+## Implementation Guide
+
+This project follows a modular structure for building the 3D portfolio. The key steps are:
+
+1. **Project Setup** – Install the dependencies listed in `package.json` and structure the `app` and `components` directories as shown in this README.
+2. **Main Layout** – Create `app/layout.tsx` with global styles and a simple `<html>` skeleton.
+3. **Entry Point** – Use `app/page.tsx` to render the `InteractivePortfolio` component.
+4. **Portfolio Component** – Manage navigation state and orchestrate the 3D scene alongside content overlays.
+5. **Bubble Scene** – Implement mouse-responsive bubbles, lighting, and particle effects with React Three Fiber.
+6. **Content Sections** – Build `About`, `Projects`, `Skills`, and `Contact` components that render inside overlays.
+7. **Event Handling** – Wrap Three.js interactions in try/catch blocks to avoid runtime errors.
+8. **Animation Loop** – Update bubble positions and particle systems inside `useFrame` callbacks.
+9. **Styling** – Extend Tailwind CSS with custom colors and animations in `tailwind.config.js`.
+10. **Data Structure** – Store portfolio data in a single object for easy updates.
+11. **Performance** – Use `useMemo` and `useCallback` to keep renders smooth on mobile devices.
+12. **Testing** – Ensure bubbles are clickable, navigation works, and responsive layouts look good before deploying.
 
 ## 📱 Sections
 
