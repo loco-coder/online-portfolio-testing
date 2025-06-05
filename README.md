@@ -28,10 +28,10 @@ git clone https://github.com/loco-coder/jonathan-rodriguez-portfolio.git
 
 # Install dependencies
 cd jonathan-rodriguez-portfolio
-npm install
+pnpm install
 
 # Start development server
-npm run dev
+pnpm run dev
 \`\`\`
 
 Visit [http://localhost:3000](http://localhost:3000) to see the portfolio.
